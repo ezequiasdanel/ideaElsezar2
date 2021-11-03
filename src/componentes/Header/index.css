@@ -1,0 +1,28 @@
+.header{
+    background-image: linear-gradient(to left, #00000081, #212222);
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;}
+.header-logo{
+    font-family: fantasy;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.header-nav{
+    display: flex;    
+    margin-right: 10px;
+}
+.header-link{
+    font-size: 1rem;
+    color: whitesmoke;
+    padding-left:  15px; ;
+
+}
