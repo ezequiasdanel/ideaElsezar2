@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import './index.css';
+import CardWidget from '../CardWidget/CardWidget';
 
 function Header() {
   return (
@@ -12,6 +13,7 @@ function Header() {
           <a herf=" "className="header-link">Quienes Somos</a>
           <a herf=" "className="header-link">Soporte</a>
         </nav>
+        <CardWidget/>
       </header>
     </Fragment>
   );
