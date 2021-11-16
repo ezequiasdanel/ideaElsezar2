@@ -8,7 +8,7 @@ function App () {
         <Fragment>
         <Header />
         <ItemListContainer/>
-        <ItemCount/>
+        <ItemCount stock = {10}/>
         </Fragment>
     )
 }

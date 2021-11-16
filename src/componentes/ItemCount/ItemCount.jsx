@@ -2,8 +2,9 @@ import React, {Fragment, useState} from 'react';
 import './../ItemCount/index.css'
 function ItemCount({stock}){
     const [count,setCount]= useState(1)
-    const sumar = () => {
-        setCount(count + 1)
+    const sumar = () => {   
+        if(count < stock){
+        setCount(count + 1)}
     }
     const restar = () => {
         if(count > 0){
