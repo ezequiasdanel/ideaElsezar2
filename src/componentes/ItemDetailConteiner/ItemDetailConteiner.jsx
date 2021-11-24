@@ -16,15 +16,15 @@ export function ItemDetailConteiner() {
     useEffect(()=>{
         const traerItem =new Promise((resolve)=>{
             setTimeout (() => {
-                resolve(item)
+                resolve(Item)
         },3000);
         });
         traerItem
         .then((resp)=> setItem(resp))
     })
     return(
-        <div key={item.id}>
-            <ItemDetail name={item.name} precio={item.precio} img={item.img} desc={item.desc}/>
+        <div key={item?.id}>
+            <ItemDetail name={item?.name} precio={item?.precio} img={item?.img} desc={item?.desc}/>
         </div>
     )
 }
