@@ -6,18 +6,19 @@ import { useState } from 'react/cjs/react.development';
 import { useParams } from 'react-router-dom';
 export const ItemListContainer = (props) => {
     const [items, setItems] = useState([]);
-
+    const {catId} = useParams();
 
     useEffect(() => {
         const getItems = new Promise ((resolve) => {
             setTimeout (() =>{
-                resolve(productos[0]);
+                resolve(productos);
             },1000);
         });
         getItems.then ((resolve) =>{
-            setItems(resolve);
+            catId ? setItems(resolve.filter((item) => item.tipo === catId))
+            : setItems(resolve);
         });
-    }, []);
+    }, [catId]);
     return (
     <div className="cajaComponentes">
     <ItemList items={items}/> 
