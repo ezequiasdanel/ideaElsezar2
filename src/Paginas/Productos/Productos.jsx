@@ -12,8 +12,8 @@ export function Productos (){
             <Routes>
             <Route path="/" element={<ItemListContainer/>}/>
             <Route path="/:catId" element={<ItemListContainer/>}/>
+            <Route path="/view/:itemId" element={<ItemDetailConteiner/>}/>
             </Routes>
-
         </Fragment>
     )
 }
