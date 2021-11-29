@@ -6,6 +6,11 @@ export function ItemDetailConteiner() {
     const [Item,setItem] = useState({})
     const {itemId} = useParams()
     const [isLoading, setIsLoading] = useState(true)
+    const [irAlCarrito, setIrAlCarrito] = useState(false)
+    const onAdd = (cantidad) => {
+        console.log (cantidad);
+        setIrAlCarrito(true);
+    };
     useEffect(()=>{
         const traerItem =new Promise((resolve)=>{
             setTimeout (() => {
@@ -21,7 +26,7 @@ export function ItemDetailConteiner() {
 },[itemId]);
     return isLoading ? <h1>....Cargando Producto....</h1> :(
     <div key={Item?.id}>
-    <ItemDetail nombre={Item?.nombre} precio={Item?.precio} img={Item?.img} desc={Item.desc}/>
+    <ItemDetail nombre={Item?.nombre} precio={Item?.precio} img={Item?.img} desc={Item.desc} stock={Item.stock} onAdd={onAdd} irAlCarrito={irAlCarrito}/>
     </div>);
 }
   

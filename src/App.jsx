@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Paginas/Home/Home";
 import { Productos } from "./Paginas/Productos/Productos";
 import { Soporte } from "./Paginas/Soporte/Soporte";
+import { Cart } from "./Paginas/Cart/Cart";
 
 
 function App () {
@@ -18,6 +19,7 @@ function App () {
         <Route path="/" element={<Home/>}/>
         <Route path="/Productos/*" element={<Productos/>}/>
         <Route path="/Soporte" element={<Soporte/>}/>
+        <Route path="/Cart" element={<Cart/>}/>
         </Routes>
         </BrowserRouter>
         </Fragment>
