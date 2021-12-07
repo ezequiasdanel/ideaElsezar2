@@ -8,12 +8,14 @@ import { Home } from "./Paginas/Home/Home";
 import { Productos } from "./Paginas/Productos/Productos";
 import { Soporte } from "./Paginas/Soporte/Soporte";
 import { Cart } from "./Paginas/Cart/Cart";
+import {CartContext} from './context/CartContext'
 
 
 function App () {
     return(
         <Fragment>
         <BrowserRouter>
+        <CartContext>
         <Header />
         <Routes>
         <Route path="/" element={<Home/>}/>
@@ -21,6 +23,7 @@ function App () {
         <Route path="/Soporte" element={<Soporte/>}/>
         <Route path="/Cart" element={<Cart/>}/>
         </Routes>
+        </CartContext>
         </BrowserRouter>
         </Fragment>
     )

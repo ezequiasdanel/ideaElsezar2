@@ -11,11 +11,11 @@ export const ItemDetail = ({id,nombre,precio,img,desc,stock,onAdd,irAlCarrito}) 
             <p>{desc}</p>
             {irAlCarrito ?
              (<>
-            <Link to="/cart">Terminar Compra</Link>
+            <Link to="/cart">Finalizar Compra</Link>
             </>) 
             : 
             (<>
-            <ItemCount stock={stock} onAdd={onAdd}/>
+            <ItemCount stock={stock} onClick={onAdd}/>
             </>)}
             
             

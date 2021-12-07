@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { productos } from "../../data/Productos/Productos";
+import { useAddToCart } from "../../context/CartContext";
 export function ItemDetailConteiner() {
     const [Item,setItem] = useState({})
     const {itemId} = useParams()
@@ -10,6 +11,7 @@ export function ItemDetailConteiner() {
     const onAdd = (cantidad) => {
         console.log (cantidad);
         setIrAlCarrito(true);
+        useAddToCart()
     };
     useEffect(()=>{
         const traerItem =new Promise((resolve)=>{
