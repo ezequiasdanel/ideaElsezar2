@@ -1,8 +1,5 @@
 import { Fragment } from "react";
 import Header from "./componentes/Header/Header"
-import { ItemListContainer } from "./componentes/ItemListContainer/ItemListContainer";
-import ItemCount from "./componentes/ItemCount/ItemCount";
-import { ItemDetailConteiner } from "./componentes/ItemDetailConteiner/ItemDetailConteiner";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Paginas/Home/Home";
 import { Productos } from "./Paginas/Productos/Productos";

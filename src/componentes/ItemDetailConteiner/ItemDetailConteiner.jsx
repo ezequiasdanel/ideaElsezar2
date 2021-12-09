@@ -1,17 +1,18 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { productos } from "../../data/Productos/Productos";
-import { useAddToCart } from "../../context/CartContext";
+import { Productos } from "../../context/CartContext";
 export function ItemDetailConteiner() {
     const [Item,setItem] = useState({})
     const {itemId} = useParams()
     const [isLoading, setIsLoading] = useState(true)
     const [irAlCarrito, setIrAlCarrito] = useState(false)
+    const {agregarAlCarrito} = useContext(Productos)
     const onAdd = (cantidad) => {
         console.log (cantidad);
         setIrAlCarrito(true);
-        useAddToCart()
+        agregarAlCarrito({});
     };
     useEffect(()=>{
         const traerItem =new Promise((resolve)=>{

@@ -1,8 +1,9 @@
 import { Item } from "../Item/Item"
 import ItemCount from "../ItemCount/ItemCount"
 import { Link } from "react-router-dom"
-
+import { useContext } from "react"
 export const ItemDetail = ({id,nombre,precio,img,desc,stock,onAdd,irAlCarrito}) =>{
+
     return (
         <div key={id}>
             <img src={img} width="300px"/>
@@ -15,7 +16,7 @@ export const ItemDetail = ({id,nombre,precio,img,desc,stock,onAdd,irAlCarrito}) 
             </>) 
             : 
             (<>
-            <ItemCount stock={stock} onClick={onAdd}/>
+            <ItemCount stock={stock} onAdd={onAdd}/>
             </>)}
             
             
