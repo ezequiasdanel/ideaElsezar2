@@ -1,0 +1,47 @@
+.Contador{
+margin-left: 65px;    
+margin-top: 50px;
+display: flex;   
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+height: 40px;
+width: 200px;
+justify-content: space-evenly;
+background-color: rgba(5, 124, 92, 0.427);
+
+}
+.ContadorCard{
+display: flex;
+}
+.resta{
+border: 0px;
+margin-right: 60px;
+border-radius: 8px;
+height: 40px;
+width: 0px;
+background-color: rgba(5, 124, 92, 0.427);
+}
+.suma{
+border: 0px;
+margin-left: 60px;
+border-radius: 8px;
+height: 40px;
+width: 0px;
+background-color: rgba(5, 124, 92, 0.427);
+}
+.count{
+font-size: 2rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.addCart{
+    margin-left: 65px;    
+    margin-top: 50px;
+    display: flex;   
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+    justify-content: space-evenly;
+    background-color: rgba(5, 124, 92, 0.427);
+    border-color: rgba(255, 235, 205, 0);
+}

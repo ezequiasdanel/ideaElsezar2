@@ -1,0 +1,45 @@
+.conteiner-in-cart{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    width: 600px;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(19, 19, 19, 0.2);
+    overflow: hidden;
+    background-color: rgb(240, 240, 240);
+}
+.imagen-in-cart{
+    width: 100px;
+    height: 100px;
+}
+.button-delete{
+    width: auto;
+    height: 30;
+    background-color: rgba(4, 4, 4, 0.318);
+    box-shadow: 2px 2px 2px 2px rgba(28, 27, 27, 0.2);
+    border-radius: 8px; 
+    border: 0px solid;
+}   
+.descripcion-cart{
+    display: flex;
+    flex-direction: column;
+}
+.title-cart{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to left, #00000081, #212222);
+    color: whitesmoke;
+}
+.cart-´prodcuts{
+    background-color: rgb(255, 244, 244);
+    border-radius: 8px;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    width: 650px;
+}
+
+
