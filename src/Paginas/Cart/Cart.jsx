@@ -10,6 +10,7 @@ export function Cart (){
     const {unidades, precioTotal} = useContext(Productos)
     const productosEnCarrito = useCartIn()
     const deleteFromCart = useDeleteFromCart()
+    console.log(productosEnCarrito)
 
 
 
@@ -17,19 +18,19 @@ export function Cart (){
 
 
     return unidades > 0 ? (
-        <div className="cart-´prodcuts">
+        <div className="cart-prodcuts">
             <h1 className="title-cart">Carrito</h1>
             <article>
                 {productosEnCarrito?.map((item)=>{
                     const{
-                        img,
+                        image,
                         nombre,
                         precio,
                         id,
                     } = item
                     return(
                         <div className='conteiner-in-cart' key={id}>
-                        <img src={img} alt={img} className ='imagen-in-cart' />
+                        <img src={image} alt={image} className ='imagen-in-cart' />
                         <div className="descripcion-cart">
                         <span>{nombre}</span>
                         <b>Precio ${precio}</b>
