@@ -34,12 +34,35 @@
     background-image: linear-gradient(to left, #00000081, #212222);
     color: whitesmoke;
 }
-.cart-´prodcuts{
+.cart-prodcuts{
     background-color: rgb(255, 244, 244);
     border-radius: 8px;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
+    border: 1px solid;
     width: 650px;
 }
+.form-shop{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    justify-content: space-between;
+    height: 400px   ;
+    margin-top: 20px;
 
+}
+.conteiner-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.title-form{
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to left, #00000081, #212222);
+    width: 100%;
+    height: 60px;
 
+    color: whitesmoke;
+}

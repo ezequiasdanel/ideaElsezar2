@@ -18,6 +18,11 @@ export function CartContext({children}){
         setUnidades(unidades - myItem.cantidad)
         setPrecioTotal(precioTotal - myItem.subtotal)
     }
+    const vaciarCarrito = () =>{
+        setProductosEnCarrito ([])
+        setPrecioTotal(0)
+        setUnidades(0)
+    }
 
 function agregarAlCarrito (product, cantidad) {
     if(isOnCart(product) === -1){
@@ -47,7 +52,7 @@ function agregarAlCarrito (product, cantidad) {
 
 
     return(
-        <Productos.Provider value={{agregarAlCarrito, productosEnCarrito,deleteFromCart,unidades,precioTotal}}>
+        <Productos.Provider value={{agregarAlCarrito, productosEnCarrito,deleteFromCart,unidades,precioTotal,vaciarCarrito}}>
             {children}
         </Productos.Provider>
     )
@@ -59,4 +64,7 @@ export function useCartIn (){
 }
 export function useDeleteFromCart (){
     return useContext(Productos).deleteFromCart
+}
+export function useClearCart(){
+    return useContext(Productos).vaciarCarrito
 }

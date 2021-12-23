@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 import './index.css'
 export const FilterProducts = () => {
     const categorias = [
-        {id:'001',directory:'/productos',text:'Todos Los Productos'},
+        {id:'001',directory:'/Productos',text:'Todos Los Productos'},
         {id:'002',directory:'/Productos/procesador',text:'Procesadores'},
         {id:'003',directory:'/Productos/placasdevideo',text:'Placas De Video'},
         {id:'004',directory:'/Productos/motherboard',text:'Placas Madre'},

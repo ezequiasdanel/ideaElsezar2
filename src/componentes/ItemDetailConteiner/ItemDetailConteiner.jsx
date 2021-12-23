@@ -17,7 +17,7 @@ export function ItemDetailConteiner() {
     const onAdd = (cantidad) => {
         if(cantidad > 0 ){
         setIrAlCarrito(true);
-        agregarAlCarrito({id:Item.id, nombre:Item.nombre,precio:Item.precio,stock:Item.stock,image:Item.image,tipo:Item.img,desc:Item.desc} , cantidad);
+        agregarAlCarrito({id:Item.id, nombre:Item.nombre,precio:Item.precio,stock:Item.stock,img:Item.img,tipo:Item.img,desc:Item.desc} , cantidad);
         }else{
             alert('la cantidad debe ser mayor a 0')
         }
@@ -36,7 +36,7 @@ export function ItemDetailConteiner() {
 },[itemId]);
     return isLoading ? <h1>....Cargando Producto....</h1> :(
     <div key={Item?.id}>
-    <ItemDetail nombre={Item?.nombre} precio={Item?.precio} image={Item?.image} desc={Item.desc} stock={Item.stock} onAdd={onAdd} irAlCarrito={irAlCarrito}/>
+    <ItemDetail nombre={Item?.nombre} precio={Item?.precio} img={Item?.img} desc={Item.desc} stock={Item.stock} onAdd={onAdd} irAlCarrito={irAlCarrito}/>
     </div>);
 }
    

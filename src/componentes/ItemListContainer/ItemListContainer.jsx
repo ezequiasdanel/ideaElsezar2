@@ -18,7 +18,7 @@ export const ItemListContainer = (props) => {
     useEffect(() => {
         setLoader(true);
         const getItems = catId
-    ? query (collection(db,'Productos'), where('category', '==', catId)): collection(db,'Productos')
+    ? query (collection(db,'Productos'), where('tipo', '==', catId)): collection(db,'Productos')
         getDocs(getItems)
         .then((res) => {
             const results = res.docs.map((doc)=>{
@@ -26,8 +26,13 @@ export const ItemListContainer = (props) => {
             })
             setItems(results)
             console.log(results)
-
     })
+
+    //     .then ((res) =>{
+    // catId ? query() setItems(res.docs.filter((doc) => doc.tipo === catId))
+    // : setItems(res);
+    // getDocs(getItems)})
+
     .finally(()=>{
         setLoader(false);
     })
