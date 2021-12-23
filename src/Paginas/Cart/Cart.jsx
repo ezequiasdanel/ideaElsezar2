@@ -83,8 +83,8 @@ export function Cart (){
                         <label>Confirmar e-mail</label>
                         <input type="mail" value={dataForm.confirmarEmail} name="confirmarEmail" onChange={(e) => actualizarForm(e)} required />
                         <label>Telefono</label>
-                        <input type="text" value={dataForm.telefono} name="telefono" onChange={(e) => actualizarForm(e)} required />
-                        <input type="submit" value="Comprar" />
+                        <input type="number" value={dataForm.telefono} name="telefono" onChange={(e) => actualizarForm(e)} required />
+                        <input type="submit" value="Finalizar Compra" />
                     </form>
              </div>
     ) : (
