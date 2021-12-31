@@ -9,14 +9,15 @@ import { getFirestore } from '@firebase/firestore';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAQotXM9U2go2HF3HPxUBAiDh3BUmIvEUM",
-  authDomain: "controlaltsuprimirinformatica.firebaseapp.com",
-  projectId: "controlaltsuprimirinformatica",
-  storageBucket: "controlaltsuprimirinformatica.appspot.com",
-  messagingSenderId: "1088917732970",
-  appId: "1:1088917732970:web:a69b92343a70d5e02c5413"
-};
+const firebaseConfig = 
+  {
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
+  }
 
 // Initialize Firebase
 const ppp = initializeApp(firebaseConfig);

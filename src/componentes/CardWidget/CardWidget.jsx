@@ -1,7 +1,7 @@
 const CardWidget = (props) => {
     return (
-<button type="button" class="btn btn-carrito" data-toggle="modal" data-target="#exampleModal">
-    <i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span>
+<button type="button" className="btn btn-carrito" data-toggle="modal" data-target="#exampleModal">
+    <i className="fas fa-shopping-cart"></i><span id="contadorCarrito"></span>
 </button>
     )
 }

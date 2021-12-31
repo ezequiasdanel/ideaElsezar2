@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import { FilterProducts } from "../../componentes/FilterProducts/FilterProducts";
 import { ItemDetailConteiner } from "../../componentes/ItemDetailConteiner/ItemDetailConteiner";
 import { ItemListContainer } from "../../componentes/ItemListContainer/ItemListContainer";

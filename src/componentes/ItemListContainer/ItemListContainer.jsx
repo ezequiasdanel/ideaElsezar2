@@ -1,7 +1,6 @@
 import './index.css'
 import { useEffect } from 'react';
 import { ItemList } from '../ItemList/ItemList';
-import { productos } from '../../data/Productos/Productos';
 import { useState } from 'react/cjs/react.development';
 import { useParams } from 'react-router-dom';
 import { db } from '../../index';

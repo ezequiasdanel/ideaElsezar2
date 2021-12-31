@@ -5,7 +5,7 @@ export const ItemDetail = ({id,nombre,precio,img,desc,stock,onAdd,irAlCarrito}) 
 
     return (
         <div key={id} className="detail-conteiner">
-            <img src={img} width="300px"/>
+            <img src={img} width="300px" alt=""/>
             <h1>{nombre}</h1>
             <b>Precio : ${precio}</b>
             <p>{desc}</p>

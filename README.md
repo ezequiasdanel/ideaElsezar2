@@ -25,3 +25,6 @@ Dependencias:
 
 
 Uso de bootstrap.
+Uso de jquery.
+Uso de react-router dom.
+Uso de Firebase.

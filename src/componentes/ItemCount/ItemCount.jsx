@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, { useState} from 'react';
 import './../ItemCount/index.css'
 function ItemCount({stock, onAdd}){
     const [count,setCount]= useState(1)
