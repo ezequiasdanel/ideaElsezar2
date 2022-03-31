@@ -22,3 +22,7 @@ export const FilterProducts = () => {
         </section>
     )
 }
+
+
+
+
